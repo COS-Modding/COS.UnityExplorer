@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>UnityExplorer</RootNamespace>
+        <AssemblyName>UnityExplorer</AssemblyName>
+        <TargetFramework>net472</TargetFramework>
+        <Product>UnityExplorer</Product>
+        <Version>1.0.0.0</Version>
+        <Description>Unity Explorer wrapper</Description>
+        <Copyright>Copyright © 2023</Copyright>
+        <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+		<LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+	<PropertyGroup>
+		<VanillaDir>$(SolutionDir)/../Managed</VanillaDir>
+	</PropertyGroup>
+
+    <ItemGroup>
+        <MonoModHook Include="UnityExplorer.STANDALONE.Mono" />
+        <ReflectHelper Include="UnityExplorer.STANDALONE.Mono" />
+
+        <OutputFiles Include="UnityExplorer.STANDALONE.Mono.dll" />
+        <OutputFiles Include="UniverseLib.Mono.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <HintPath>$(VanillaDir)\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="MMHOOK_Assembly-CSharp">
+            <HintPath>$(VanillaDir)\MMHOOK_Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <HintPath>$(VanillaDir)\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath>$(VanillaDir)\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+            <HintPath>$(VanillaDir)\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityExplorer.Standalone.Mono">
+            <HintPath>lib\UnityExplorer.STANDALONE.Mono.dll</HintPath>
+        </Reference>
+        <Reference Include="UniverseLib.Mono">
+            <HintPath>lib\UniverseLib.Mono.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>

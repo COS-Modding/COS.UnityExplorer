@@ -8,7 +8,7 @@
         <Description>Unity Explorer wrapper</Description>
         <Copyright>Copyright © 2023</Copyright>
         <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
-		<LangVersion>latest</LangVersion>
+	<LangVersion>latest</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>

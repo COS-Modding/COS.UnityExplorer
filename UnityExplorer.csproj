@@ -11,10 +11,6 @@
 		<LangVersion>latest</LangVersion>
     </PropertyGroup>
 
-	<PropertyGroup>
-		<VanillaDir>$(SolutionDir)/../Managed</VanillaDir>
-	</PropertyGroup>
-
     <ItemGroup>
         <MonoModHook Include="UnityExplorer.STANDALONE.Mono" />
         <ReflectHelper Include="UnityExplorer.STANDALONE.Mono" />
@@ -25,19 +21,19 @@
 
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
-            <HintPath>$(VanillaDir)\Assembly-CSharp.dll</HintPath>
+            <HintPath>$(ManagedDir)\Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="MMHOOK_Assembly-CSharp">
-            <HintPath>$(VanillaDir)\MMHOOK_Assembly-CSharp.dll</HintPath>
+            <HintPath>$(ManagedDir)\MMHOOK_Assembly-CSharp.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine">
-            <HintPath>$(VanillaDir)\UnityEngine.dll</HintPath>
+            <HintPath>$(ManagedDir)\UnityEngine.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.CoreModule">
-            <HintPath>$(VanillaDir)\UnityEngine.CoreModule.dll</HintPath>
+            <HintPath>$(ManagedDir)\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine.InputLegacyModule">
-            <HintPath>$(VanillaDir)\UnityEngine.InputLegacyModule.dll</HintPath>
+            <HintPath>$(ManagedDir)\UnityEngine.InputLegacyModule.dll</HintPath>
         </Reference>
         <Reference Include="UnityExplorer.Standalone.Mono">
             <HintPath>lib\UnityExplorer.STANDALONE.Mono.dll</HintPath>

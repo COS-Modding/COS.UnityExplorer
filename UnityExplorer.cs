@@ -13,7 +13,7 @@ namespace UnityExplorer
         internal static UnityExplorer Instance;
         private bool isInitialized = false;
 
-        public override void Initialize()
+        public override void Init()
         {
             Instance = this;
             if (ueGo != null) return;
